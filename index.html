@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facter AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .editor-content {
+        font-family: 'Merriweather', serif;
+        outline: none;
+        line-height: 1.8;
+      }
+      .fact-error {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #ef4444;
+        text-underline-offset: 4px;
+        background-color: rgba(254, 202, 202, 0.3);
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      .fact-error:hover {
+        background-color: rgba(254, 202, 202, 0.6);
+      }
+      
+      /* Dark mode specific styles for fact errors */
+      .dark .fact-error {
+        text-decoration-color: #f87171;
+        background-color: rgba(127, 29, 29, 0.4);
+      }
+      .dark .fact-error:hover {
+        background-color: rgba(127, 29, 29, 0.6);
+      }
+
+      /* Hide scrollbar for clean look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4b5563;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DoznRJtg.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
